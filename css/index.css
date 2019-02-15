@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Work+Sans'); 
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display'); 
+
+:root {
+    font-family: 'Work Sans', sans-serif;
+    --page-color: black;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+.navbar-expand-lg {
+    background-color: #93d808;
+    padding: 10px;
+}
+
+.collections {
+    background-color: #eef2e6;
+}
+
+header .logo {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #efe115;
+    list-style-type: none;
+}
+
+.nav-item, .nav-item1, .nav-item2, .nav-item3 {
+    width: 80px;
+}
+
+header .navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+header .navbar-nav {
+    list-style-type: none;
+}
+
+header .navbar-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--page-color);
+}
+
+header .navbar-nav a:hover {
+    text-decoration: underline;
+    color: #e8f925;
+    font-weight: bold;
+}
+
+@media (min-width: 890px) {
+    header nav {
+        display: flex;
+    }
+
+    header .logo {
+        margin: 24px 10px;
+    }
+
+    header nav .menu {
+        align-items: center;
+        flex: 1;
+    }
+}
+
+header .home-baner-text {
+    background-image: url(../img/fe-orig.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner h1 {
+    color: #911d8d;
+    font-size: x-large;
+    font-style: italic;
+    padding-left: 5%
+}
+
+.header-phone {
+    font-size: large;
+    padding-left: 5%;
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+    header .banner {
+        display: grid;
+        grid-template-columns: 70% 50%;
+        grid-gap: 10px;
+    }
+}
+
+.aboutus h2 {
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #777;
+    font-size: 36px;
+}
+
+.aboutus p {
+    padding: 10px;
+}
+
+.aboutus img {
+    display: block;
+    width: 100%;
+}
+
+.aboutus {
+    display: grid;
+    grid-gap: 10px;
+}
+
+@media (min-width: 700px) {
+    .articleimg {
+        float: left;
+        width: 40%;
+    }
+
+    .articlepag {
+        float: right;
+        width: 60%;
+    }
+}
+
+.collection-title {
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #777;
+    font-size: 36px;
+}
+
+.collection-item-jmg h3 {
+    background-color: #467fa3;
+    margin: 0 0 10px 0;
+    padding: 10px 0 10px 10px;
+}
+
+.collection-item-jmg img {
+    display: block;
+    width: 100%;
+    height: 325px;
+}
+
+.collection-item {
+    border: 1px solid #959595;
+}
+
+.collection-text {
+    padding: 20px 20px 20px 20px;
+}
+
+.collection-text p {
+    overflow: hidden;
+    text-align: justify;
+}
+
+@media (min-width: 750px) {
+    .collections {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.formaction {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 10px 0;
+}
+
+.formaction [class="submit"] {
+    padding: 10px 50px;
+    margin: 1px;
+    border: 1px solid rgb(40, 9, 112);
+    border-radius: 5px;
+    background-color: #09e510;
+    text-decoration: none;
+    color: black;
+    width: 180px;
+}
+
+.formaction [class="submit"]:hover {
+    color: #045b0b;
+    font-weight: bold;
+}
+
+.tittleaside h2 {
+    margin: 0 0 20px 0;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+input[type=text], input[type=email], textarea {
+    margin: 0.5rem 0;
+    display: block;
+    border: 0.1rem solid #f3d448;
+    border-radius: 4px;
+}
+
+.slogan p {
+    margin: 0 0 50px 40px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #232325;
+    font-weight: 600;
+}
+
+#message {
+    width: 15rem;
+    height: 8rem;
+}
+
+#contactme {
+    background-color: #dbff96;
+}
+
+.contac-form {
+    display: flex;
+    justify-content: center;
+}
+
+#feedback {
+    margin: 0 0 10px 0;
+    padding: 0.4rem 1.3rem;
+    justify-self: center;
+    align-self: flex-end;
+    background-color: #f3d448;
+    color: #232325;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    border-color: #f3d448;
+    border-radius: 4px;
+}
+
+@media (min-width: 500px) {
+    .contactme {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 50% 45%;
+    }
+
+    .slogan {
+        display: flex;
+        max-width: 60%;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: 20%;
+    }
+
+    .slogan p:first-child {
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        color: #232325;
+        font-weight: 600;
+    }
+}
+
+.footer-phrase {
+    background-color: #383535;
+    color: #dbd0d0;
+}
+
+.footer-info p {
+    margin: 15px;
+}
+
+.footer-info h2 {
+    color: #efe115;
+    margin: 15px;
+}
+
+.footer-contact h2 {
+    color: #efe115;
+    margin: 15px;
+}
+
+.footer-massage ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-massage a {
+    text-decoration: none;
+    color: #efe115;
+}
+
+.contact-adres {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-phone {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-massage {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-massage a:hover {
+    color: #e8f925;
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+    .footer-phrase {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 40% 30% 25%;
+    }
+
+    .footer-massage {
+        display: flex;
+        align-items: center;
+    }
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+@media (min-width: 700px) {
+    #myBtn {
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+        z-index: 99;
+        border: none;
+        background-color: orange;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 100%;
+        font-size: 18px;
+    }
+
+    #myBtn:hover {
+        background-color: #555;
+        color: white;
+    }
+}
+
+@media (min-width: 600px) {
+    #myBtn {
+        background-color: orange;
+        position: fixed;
+        bottom: 3%;
+        right: 4%;
+        z-index: 99;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 100%;
+        font-size: 18px;
+    }
+
+    #myBtn:hover {
+        background-color: #555;
+        color: white;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal_content {
+    color: #000;
+    position: relative;
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+@media (min-width: 600px) {
+    .modal_content {
+        width: 50%
+    }
+}
+
+@media (min-width: 700px) {
+    .modal_content {
+        width: 40%
+    }
+}
+
+.btn_close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #fefefe;
+    border: none;
+    font-size: 28px;
+    color: #aaa;
+    font-weight: bold;
+}
+
+.login-form {
+    display: block;
+    margin-top: 0em;
+}
+
+.modal_content .form_name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal_content .text_area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=submit] {
+    margin: 0 0 10px 0;
+    padding: 0.4rem 1.3rem;
+    justify-self: center;
+    background-color: #f3d448;
+    color: #232325;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    border-color: #f3d448;
+    border-radius: 4px;
+}
+
+.home-baner-main-text {
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 55px;
+    line-height: 60px;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    color: #37474F;
+}
+
+.home-baner-main-text b {
+    color: #FF9800;
+}
+
+.home-baner-subtitle {
+    display: inline-block;
+    width: 100%;
+    text-transform: lowercase;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.home-baner-text {
+    padding-top: 200px;
+    position: relative;
+    padding-left: 50px;
+}

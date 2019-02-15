@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Work+Sans'); 
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display'); 
+
+:root {
+    font-family: 'Work Sans', sans-serif;
+    --page-color: black; 
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+.navbar-expand-lg {
+    background-color: #93d808;
+    padding: 10px;
+}
+
+.collections {
+    background-color: #eef2e6;
+}
+
+.nav-item, .nav-item1, .nav-item2, .nav-item3 {
+    width: 80px;
+}
+
+header .logo {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #efe115;
+    list-style-type: none;
+}
+
+header .navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+header .navbar-nav {
+    list-style-type: none;
+}
+
+header .navbar-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--page-color);
+}
+
+header .navbar-nav a:hover {
+    text-decoration: underline;
+    color: #e8f925;
+    font-weight: bold;
+}
+
+@media (min-width: 890px) {
+    header nav {
+        display: flex;
+    }
+
+    header .logo {
+        margin: 24px 10px;
+    }
+
+    header nav .menu {
+        align-items: center;
+        flex: 1;
+    }
+}
+
+header .home-baner-text {
+    background-image: url(../img/masazh2.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner h1 {
+    color: #e8f925;
+    font-size: x-large;
+    font-style: italic;
+    padding-left: 5%;
+    margin: 16px;
+}
+
+.header-phone {
+    font-size: large;
+    padding-left: 5%;
+    font-weight: bold;
+    margin: 16px;
+}
+
+input[type=text], input[type=email], input[type=date], select[name=massage] {
+    width: 15rem;
+    padding: 0.3rem 1.2rem;
+    margin: 0.5rem 0;
+    display: block;
+    border: 0.1rem solid #f3d448;
+    border-radius: 4px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    background-color: #dbff96;
+}
+
+.home-baner-text {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.contac-form {
+    grid-column-start: 2;
+    grid-row-start: 11;
+    grid-row-end: 6;
+    z-index: 1;
+}
+
+input[type=submit] {
+    margin: 0 0 10px 0;
+    padding: 0.4rem 1.3rem;
+    justify-self: center;
+    align-self: flex-end;
+    background-color: #f3d448;
+    color: #232325;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    border-color: #f3d448;
+    border-radius: 4px;
+}
+
+@media (min-width: 700px) {
+    .contac-form {
+        grid-column-start: 3;
+        grid-row-start: 11;
+        grid-row-end: 6;
+    }
+}
+
+.footer-phrase {
+    background-color: #383535;
+    color: #dbd0d0;
+}
+
+.footer-info p {
+    margin: 15px;
+}
+
+.footer-info h2 {
+    color: #efe115;
+    margin: 15px;
+}
+
+.footer-contact h2 {
+    color: #efe115;
+    margin: 15px;
+}
+
+.footer-massage ul {
+    list-style-type: none;
+}
+
+.footer-massage a {
+    text-decoration: none;
+    color: #efe115;
+}
+
+.contact-adres {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-phone {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-massage {
+    display: flex;
+}
+
+.footer-massage a:hover {
+    color: #e8f925;
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+    .footer-phrase {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 40% 33% 25%;
+    }
+
+    .footer-massage {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.home-baner-main-text {
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 55px;
+    line-height: 60px;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    color: #37474F;
+}
+
+.home-baner-main-text b {
+    color: #FF9800;
+}
+
+.home-baner-subtitle {
+    display: inline-block;
+    width: 100%;
+    text-transform: lowercase;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.home-baner-text {
+    padding-top: 200px;
+    position: relative;
+    padding-left: 50px;
+}
